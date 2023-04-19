@@ -100,6 +100,7 @@
 
         <section class="contacto">
             <h2>¡Contáctanos!</h2>
+            <!--
             <form>
               <label for="nombre">Nombre:</label>
               <input type="text" id="nombre" required>
@@ -111,6 +112,41 @@
               <textarea id="mensaje" required></textarea>
               
               <button type="submit">Enviar mensaje</button>
+            </form>-->
+            <form action="procesar.php" method="post">
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+            
+              <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+              <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            
+              <label for="rango_ingreso">Rango de ingreso:</label>
+              <input type="range" id="rango_ingreso" name="rango_ingreso" min="0" max="1000000" step="1000" required>
+            
+              <input type="hidden" id="edad" name="edad">
+            
+              <label for="genero">Género:</label>
+              <select id="genero" name="genero" required>
+                <option value="">Seleccione una opción</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+              </select>
+            
+              <label for="grado_academico">Grado académico:</label>
+              <select id="grado_academico" name="grado_academico[]" multiple required>
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="preparatoria">Preparatoria</option>
+                <option value="licenciatura">Licenciatura</option>
+                <option value="maestria">Maestría</option>
+                <option value="doctorado">Doctorado</option>
+              </select>
+            
+              <input type="submit" value="Enviar">
             </form>
           </section>
 
