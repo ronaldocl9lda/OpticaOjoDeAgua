@@ -54,6 +54,7 @@
 
 #cartas {
     display: grid;
+    width: 80%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
 }
@@ -199,6 +200,9 @@
     }
     #DMKHeader h2 {
         margin-bottom: 25px;
+    }
+    #banner img {
+        width: 100%;
     }
 }
 
