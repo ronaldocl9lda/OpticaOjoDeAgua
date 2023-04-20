@@ -19,15 +19,18 @@ function cargarEventListeners() {
     });
 
     //Este Boton funciona utilizando JQUERY
-    /*$("#vaciar-carrito").click(function() {
+    $("#vaciar-carrito").click(function() {
         cartasCarrito = []; //Resetear el arreglo
         limpiarHTML(); // Eliminar todo el HTML
-    });*/
+        localStorage.clear(); // Limpia el localStorage
+    });
+    
+    /*
     vaciarCarritoBtn.addEventListener("click", () => {
         cartasCarrito = []; //Resetear el arreglo
         limpiarHTML(); // Eliminar todo el HTML
         localStorage.clear();
-    });
+    });*/
 }
 
 function agregarCurso(e) {
