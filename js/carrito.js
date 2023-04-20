@@ -19,9 +19,14 @@ function cargarEventListeners() {
     });
 
     //Este Boton funciona utilizando JQUERY
-    $("#vaciar-carrito").click(function() {
+    /*$("#vaciar-carrito").click(function() {
         cartasCarrito = []; //Resetear el arreglo
-        agregarHTML(); // Eliminar todo el HTML
+        limpiarHTML(); // Eliminar todo el HTML
+    });*/
+    vaciarCarritoBtn.addEventListener("click", () => {
+        cartasCarrito = []; //Resetear el arreglo
+        limpiarHTML(); // Eliminar todo el HTML
+        localStorage.clear();
     });
 }
 
@@ -95,7 +100,6 @@ function leerDatosProductos(producto) {
         console.log(cartasCarrito);
 
         agregarHTML();
-        sincronizarStorage ();
 }
 
 function sincronizarStorage () {
@@ -123,6 +127,8 @@ function agregarHTML() {
     //Agrega el HTML del carrito en el tbody
     contenedorCarrito.appendChild(row);
     });
+
+    sincronizarStorage();
 }
 
 function limpiarHTML() {
