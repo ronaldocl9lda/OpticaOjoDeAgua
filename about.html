@@ -68,7 +68,7 @@
                     <li><a class="dropdown-item" href="#">En Oferta</a></li>
                   </ul>
                 </li>
-                <a class="nav-link" href="about.html">Acerca de Nosotros</a>
+                <a class="nav-link" href="#">Acerca de Nosotros</a>
                 <a class="nav-link" href="contactanos.html">Contáctanos</a>
                 </div>
               </div>
@@ -98,151 +98,7 @@
     <!-- Row 2: Incluye Carrucel -->
     <div id="row-2">
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/selective-focus-photography-of-pink-and-black-framed-975668.jpg" class="d-block w-100" alt="Imagen carousel 1">
-            <div class="carousel-caption d-md-block">
-              <h5>Los mejores precios</h5>
-              <p>Reach customers while they shop, we offerings help you to bring the products they're looking for.</p>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <img src="img/tipos-de-lunas-para-lentes-de-medida.jpg" class="d-block w-100" alt="Imagen carousel 1">
-            <div class="carousel-caption d-md-block">
-              <h5>Las mejores garantías</h5>
-              <p>Reach customers while they shop, we offerings help you to bring the products they're looking for.</p>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <img src="img/tipos-de-lunas-para-lentes-de-medida.jpg" class="d-block w-100" alt="Imagen carousel 1">
-            <div class="carousel-caption d-md-block">
-              <h5>Las mejores garantías</h5>
-              <p>Reach customers while they shop, we offerings help you to bring the products they're looking for.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
-      </div>
-      <!-- 
-        Imagen 1: 
-                  img/carousel-1.jpg
-                  Textos:
-                          <h5>Grow your Business</h5>
-                          <p>
-                            Reach customers while they shop, we offerings help you to
-                            bring the products they're looking for.
-                          </p>
-        Imagen 2:
-                  img/carousel-2.jpg
-                  <h5>Digital Challenges</h5>
-                  <p>
-                    Digital channels proliferate rapidly and do you need a deep
-                    understanding of consumer behavior.
-                  </p>
       
-      -->
-
-    </div>
-
-    <!-- Row 3: Incluye la Lista de Servicios -->
-    <div id="row-3">
-      <div>
-        <!--Títulos-->
-        <div id="titulo">
-          <p>Ofrecemos</p>
-          <h1>Digital Marketing Services</h1>
-          <h1></h1>
-        </div>
-        
-        <!--Cajas de Servicios-->
-        <div id="contenedor-cajas">
-          
-          <div class="caja">
-            <div>
-              <img src="img/icon/icon-5.png" alt="Icon" />
-            </div>
-            <h5 class="mb-3">Digital Marketing</h5>
-            <p class="mb-0">
-              These major digital marketing services have been used by
-              countless businesses to drive traffic
-            </p>          
-          </div>
-
-          <div class="caja">
-              <div>
-                <img src="img/icon/icon-6.png" alt="Icon" />
-              </div>
-              <h5 class="mb-3">Internet Marketing</h5>
-              <p class="mb-0">
-                Promotion products or services through online tools that
-                generate leads and drive traffic.
-              </p>
-
-          </div>
-
-          <div class="caja">
-            <div>
-              <img src="img/icon/icon-7.png" alt="Icon" />
-            </div>
-            <h5 class="mb-3">Content Marketing</h5>
-            <p class="mb-0">
-              Include media like newsletters, podcasts, social media posts,
-              and videos
-            </p>
-          </div>
-
-          <div class="caja">
-            <div>
-              <img src="img/icon/icon-8.png" alt="Icon" />
-            </div>
-            <h5 class="mb-3">Social Marketing</h5>
-            <p class="mb-0">
-             Introduce a brand, grab people’s attention and engage with
-              prospects and customers, in social media platforms.
-            </p>
-          </div>
-
-          <div class="caja">
-
-            <div>
-              <img src="img/icon/icon-9.png" alt="Icon" />
-            </div>
-            <h5 class="mb-3">B2B Marketing</h5>
-            <p class="mb-0">
-              Your team for integrated B2B campaigns, performance marketing
-              and strategic communication.
-            </p>
-
-          </div>
-
-          <div class="caja">
-            <div>
-              <img src="img/icon/icon-10.png" alt="Icon"/>
-            </div>
-            <h5 class="mb-3">E-mail Marketing</h5>
-            <p class="mb-0">
-              Deliver more personalised email marketing based on customer
-              behaviours. Get started today!
-            </p>
-          </div>
-
-        </div>
-
-      </div>
       
     </div>
 
@@ -300,5 +156,21 @@
     ></script>
 
     <script src="js/app.js"></script>
+    <script>
+        function initMap() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: position.coords.latitude, lng: position.coords.longitude},
+                    zoom: 8
+                });
+                });
+            } else {
+                // Si el navegador no admite la geolocalización, se muestra un mensaje de error
+                alert('Tu navegador no admite la geolocalización');
+            }
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyHcAvvnoGOonZpdQaguL4v5VG0foIaWc&callback=initMap" async defer></script>
   </body>
 </html>
