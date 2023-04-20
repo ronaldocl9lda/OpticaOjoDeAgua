@@ -68,7 +68,7 @@
                     <li><a class="dropdown-item" href="#">En Oferta</a></li>
                   </ul>
                 </li>
-                <a class="nav-link" href="#">Acerca de Nosotros</a>
+                <a class="nav-link" href="about.html">Acerca de Nosotros</a>
                 <a class="nav-link" href="contactanos.html">Contáctanos</a>
                 </div>
               </div>
@@ -100,58 +100,54 @@
 
         <section class="contacto">
             <h2>¡Contáctanos!</h2>
-            <!--
-            <form>
-              <label for="nombre">Nombre:</label>
-              <input type="text" id="nombre" required>
-              
-              <label for="correo">Correo electrónico:</label>
-              <input type="email" id="correo" required>
-              
-              <label for="mensaje">Mensaje:</label>
-              <textarea id="mensaje" required></textarea>
-              
-              <button type="submit">Enviar mensaje</button>
-            </form>
-            <form action="procesar.php" method="POST">-->
               <form action="procesar.php" method="post"> 
-              <label for="nombre">Nombre completo:</label>
-              <input type="text" id="nombre" name="nombre" required>
-            
-              <label for="email">Correo electrónico:</label>
-              <input type="email" id="email" name="email" required>
-            
-              <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-              <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-            
-              <label for="rango_ingreso">Rango de ingreso:</label>
-              <input type="range" id="rango_ingreso" name="rango_ingreso" min="0" max="1000000" step="1000" required>
-            
-              <input type="hidden" id="edad" name="edad">
-            
-              <label for="genero">Género:</label>
-              <select id="genero" name="genero" required>
-                <option value="">Seleccione una opción</option>
-                <option value="masculino">Masculino</option>
-                <option value="femenino">Femenino</option>
-                <option value="otro">Otro</option>
-              </select>
-            
-              <label for="grado_academico">Grado académico:</label>
-              <select id="grado_academico" name="grado_academico[]" multiple required>
-                <option value="primaria">Primaria</option>
-                <option value="secundaria">Secundaria</option>
-                <option value="preparatoria">Preparatoria</option>
-                <option value="licenciatura">Licenciatura</option>
-                <option value="maestria">Maestría</option>
-                <option value="doctorado">Doctorado</option>
-              </select>
-            
-              <input type="submit" value="Enviar">
+                  <label for="nombre">Nombre completo:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" id="email" name="email" required>
+                
+                  <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                  <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                
+                  <label for="rango_ingreso">Rango de ingreso:</label>
+                  <input type="range" id="rango_ingreso" name="rango_ingreso" min="0" max="1000000" step="1000" required>
+                
+                  <input type="hidden" id="edad" name="edad">
+                
+                  <label for="genero">Género:</label>
+                  <select id="genero" name="genero" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                
+                  <label for="grado_academico">Grado académico:</label>
+                  <select id="grado_academico" name="grado_academico[]" multiple required>
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="preparatoria">Preparatoria</option>
+                    <option value="licenciatura">Licenciatura</option>
+                    <option value="maestria">Maestría</option>
+                    <option value="doctorado">Doctorado</option>
+                  </select>
+                  
+                
+                  <input type="submit" value="Enviar">
             </form>
-            
           </section>
-
+          <div id="ubicacion">
+              <div>
+                  <h3>Origen</h3>
+                  <div id="map"></div>
+                  
+              </div>
+              <div>
+                  <h3>Destino</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.5935494022538!2d-84.22898052568826!3d9.967734440136022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f91e40e06635%3A0xd44f5157bf03804d!2sUrbanizacion%20la%20Paz%2C%20Provincia%20de%20Alajuela%2C%20San%20Rafael!5e0!3m2!1ses!2scr!4v1681975531158!5m2!1ses!2scr" width="600" height="300" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
     </div>
 
     <!-- Row 4: Incluye la Información del Footer -->
@@ -163,6 +159,7 @@
               <p class=""><i class=""></i>San Rafael de Alajuela</p>
               <p class=""><i class=""></i>+506 862290 55</p>
               <p class=""><i class=""></i>Ronaldocl9lda@gmail.com</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.5935494022538!2d-84.22898052568826!3d9.967734440136022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f91e40e06635%3A0xd44f5157bf03804d!2sUrbanizacion%20la%20Paz%2C%20Provincia%20de%20Alajuela%2C%20San%20Rafael!5e0!3m2!1ses!2scr!4v1681975531158!5m2!1ses!2scr" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="caja-footer caja-lista">
               <h4 class="mb-4">Quick Links</h4>
@@ -183,10 +180,10 @@
             </div>
             <div class="caja-footer caja-lista">
               <h4 class="mb-4">Redes Sociales</h4>
-              <a class="k" href=""><img src="" alt="Logo Facebook"></a>
-              <a class="" href=""><img src="" alt="Logo Instagram"></a>
-              <a class="" href=""><img src="" alt="Logo Twittee"></a>
-              <a class="" href=""><img src="" alt="Logo Youtube"></a>
+              <a class="k" href="https://www.facebook.com/ronaldo.camposlucas" target="_blank"><img src="img/logo-facebook-png.png" alt="Logo Facebook"></a>
+              <a class="" href="https://instagram.com/ronaldoucl?igshid=ZDdkNTZiNTM=" target="_blank"><img src="img/instagram.png" alt="Logo Instagram"></a>
+              <a class="" href="https://twitter.com/ronaldoucl" target="_blank"><img src="img/twitter-logo-vector-png-clipart-1.png" alt="Logo Twittee"></a>
+              <a class="" href="https://www.youtube.com/channel/UC74Iknn0txDpEItNXKkvnGQ" target="_blank"><img src="img/Youtube_logo.png" alt="Logo Youtube"></a>
               </div>
             </div>
           </div>
@@ -195,6 +192,11 @@
     </footer>
 
     <!-- Bootstrap JavaScript Libraries -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyHcAvvnoGOonZpdQaguL4v5VG0foIaWc&callback=initMap" async defer></script>
+    <script src="js/geolocalizacion.js"></script>
+  
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

@@ -1,7 +1,42 @@
 /*Encabezado de la página que incluye ícono y título*/
 
+#ubicacion {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+#map {
+    display: block;
+    align-items: center;
+	width: 30%;
+    margin: 30px;
+}
+
+#map-destino {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+	width: 30%;
+}
+
+#ubicacion h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px;
+}
+
 #banner {
     text-align: center;
+}
+
+#video-rayban {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 #row-1 .container-fluid #DMKHeader{
@@ -96,6 +131,7 @@
 
 /*Contáctanos*/
 
+
 .contacto {
     background-color: #f8f8f8;
     padding: 50px;
@@ -141,6 +177,14 @@
   
   .contacto button[type="submit"]:hover {
     background-color: #ffad33;
+  }
+
+  #ubicacion {
+    display: flex;
+  }
+
+  #ubicacion div {
+    width: 50%;
   }
 
   /* Estilo para el elemento select */
@@ -194,6 +238,49 @@ select {
     justify-content: center;
 }
 
+/* Acerca de Nosotros */
+
+#row-2 h1 {
+    font-size: 60px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#row-2 #container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    width: 90%;
+}
+
+#row-2 #container div img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#row-2 #container div p {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+
+#row-2 #container div #ronaldo {
+    text-align: end;
+    margin-right: 0px;
+}
+
+#row-2 #container div #gerardo {
+    text-align: start;
+    margin-left: 0px;
+}
+
+
 /*Footer*/
 
 .contenido-footer {
@@ -215,9 +302,16 @@ select {
     color: white;
 }
 
-.contenedor-elementos .caja-lista a {
+.contenedor-elementos .caja-lista a{
     display: block;
     color: #ccc;
+}
+
+.contenedor-elementos .caja-lista a img{
+    display: flex;
+    width: 50px;
+    margin: 5px;
+    
 }
 
 /*Media Queries*/
@@ -254,6 +348,39 @@ select {
     .card h5 {
         text-align: center;
     }
+
+    #row-2 #container {
+        grid-template-columns: 1fr;
+    }
+
+    #row-2 #container #contenedor-ronaldo {
+       grid-column: 1/2;
+       grid-row: 4/5;
+    }
+
+    #row-2 #container #foto-ronaldo {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-top: 60px;
+    }
+
+    #row-2 #container div #ronaldo {
+        width: 100%;
+        text-align: center;
+    }
+
+    #row-2 #container div #gerardo {
+        width: 100%;
+        text-align: center;
+    }
+
+    #video-rayban {
+        width: 80%;
+    }
+
+    #ubicacion {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1500px) {
@@ -262,9 +389,9 @@ select {
     }
 }
 
-@media (max-width: 345px) {
+@media (max-width: 450px) {
     .carousel-caption h5 {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
     }
     #contenedor-cajas .caja {
