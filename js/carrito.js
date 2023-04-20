@@ -18,8 +18,8 @@ function cargarEventListeners() {
         agregarHTML();
     });
 
-    //Vaciar el carrito
-    vaciarCarritoBtn.addEventListener("click", () => {
+    //Este Boton funciona utilizando JQUERY
+    $("#vaciar-carrito").click(function() {
         cartasCarrito = []; //Resetear el arreglo
         agregarHTML(); // Eliminar todo el HTML
     });

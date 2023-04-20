@@ -137,11 +137,15 @@
     background-color: #f8f8f8;
     padding: 50px;
     text-align: center;
+    border-bottom: 2px solid;
   }
   
   .contacto h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #186cf7;
+    text-decoration: solid;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
   
   .contacto form {
@@ -227,6 +231,10 @@ select {
     padding-right: 30px;
 }
 
+#cartas .btn-primary:active {
+    background-color: greenyellow;
+}
+
 #vaciar-carrito {
     display: flex;
     padding: 10px;
@@ -243,8 +251,11 @@ select {
 
 #row-2 h1 {
     font-size: 60px;
+    margin-top: 50px;
     margin-bottom: 100px;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 #row-2 #container {
@@ -260,6 +271,8 @@ select {
     display: block;
     margin: 0 auto;
     width: 60%;
+    border-radius: 20px;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 #row-2 #container div p {
@@ -301,6 +314,10 @@ select {
 .caja-footer .mb-4,
 .caja-footer .horario {
     color: white;
+}
+
+.caja-footer .mb-4 a {
+    margin-bottom: 15px;
 }
 
 .contenedor-elementos .caja-lista a{
@@ -348,6 +365,7 @@ select {
     .card p,
     .card h5 {
         text-align: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
     #row-2 #container {
@@ -381,6 +399,21 @@ select {
 
     #ubicacion {
         width: 100%;
+    }
+
+    .submenu {
+        width: 90%;
+    }
+
+    #vaciar-carrito {
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    #lista-carrito thead tr th{
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
     }
 }
 
